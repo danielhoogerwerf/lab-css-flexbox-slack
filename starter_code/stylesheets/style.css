@@ -5,3 +5,254 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    color: #2C303F;
+    font-family: Times, 'Times New Roman', serif;
+    font-weight: 700;
+    line-height: 1
+}
+
+h1 {
+    padding-bottom: 25px;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.9em;
+}
+
+.main-font {
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #5d5f6d;
+}
+
+.nav-bar {
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    padding: 0px 5% 0px 5%;
+    background-color: white;
+    border-bottom: 2px solid rgb(238, 238, 238);
+    height: 100px;
+}
+
+.nav-bar > img {
+    width: 140px;
+}
+
+.nav-bar-baricon {
+    width: 100px;
+    color: #5b5e6d;
+    font-size: 3rem;
+}
+
+.nav-bar ul li {
+    list-style-type: none;
+    display: inline;
+    text-align: center;
+}
+
+.header {
+    padding: 160px 5% 0 5%;   
+}
+
+.header input {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 25px;
+    font-size: 1.5rem; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header button {
+    margin-top: 40px;
+    border-radius: 5px;
+    padding: 25px;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    background-color: #4149aa;
+    color: white;
+    width: 100%;
+
+}
+
+#header-form-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header img {
+    width: 500px;
+    padding: 50px 0 50px 0;
+} 
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+
+}
+
+.main > p {
+    padding-top: 25px;
+}
+
+.main-box {
+    padding: 100px 5% 0 5%;  
+    background-color: #f5f5f5;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+}
+
+.main button {
+    margin-top: 40px;
+    /* color: rgba(0,0,0,.5); */
+    /* border: 1px solid lightgray; */
+    border-radius: 5px;
+    border: 2px solid #9ba1d2;
+    padding: 25px;
+    font-size: 1.5rem; 
+    font-weight: bold;
+    color: #4149aa;
+    background-color: white;
+    width: 100%;
+
+}
+
+.main-images {
+    margin: 100px 0 100px 0;
+}
+
+.main img {
+    width: 80%;
+    padding: 50px;
+    border-bottom: 2px solid #ebebeb;
+    border-width: 20%;
+}
+.main img:last-child {
+    border: none;
+}
+
+#main-footer {
+    line-height: 1;
+    margin: 50px 0 50px 0;
+    width: 90%;
+}
+
+#main-footer button {
+    background-color: #4149aa;
+    color: white;
+    width: 100%;
+    
+}
+
+#main-footer input {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 25px;
+    font-size: 1.5rem; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer {
+    line-height: 2;
+    font-size: 1.5em;
+    /* display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start; */
+}
+
+.footer > img {
+    width: 200px;
+}
+
+.footer-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.footer-ul {
+    list-style-type: none;
+    /* display: inline-block; */
+    width: 40%;
+}
+
+.footer-li-bold {
+    font-weight: bold;
+
+}
+
+.end-footer-box {
+    background-color: #f5f5f5;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.end-footer-ul {
+    margin-right: 5%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.end-footer-language {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.end-footer-language div, i {
+    padding: 5px;
+}
+
+.end-footer-language img {
+    width: 40px;
+}
+
+@media (max-width: 767px) {
+	.nav-bar-menu {
+	display: none;
+    }	
+
+    .main {
+        flex-flow: column nowrap;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 961px) {
+	.nav-bar-menu {
+	display: none;
+    }	
+
+}
